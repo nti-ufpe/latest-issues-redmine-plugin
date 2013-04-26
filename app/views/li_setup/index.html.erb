@@ -1,13 +1,13 @@
 <h2>Latest Issues Configuration</h2>
     <%= form_tag("/latest-issues/change") do %>
     <dl>
-        <label>Number of issues on page:</label>
+        <label>Número de tarefas nas páginas:</label>
         <input type="text" maxsize="2" name="count" value="<%= @setup.max_count %>"/>
     </dl><dl>    
-        <label>Which side do you want the plugin on?</label>
+        <label>Qual lado você quer colocar o plugin??</label>
         <select name="side">
-          <option value="left" <% if @setup.side == 'left' %>selected<% end %>>left</option>
-          <option value="right" <% if @setup.side == 'right' %>selected<% end %>>right</option>
+          <option value="left" <% if @setup.side == 'left' %>selected<% end %>>esquerda</option>
+          <option value="right" <% if @setup.side == 'right' %>selected<% end %>>direita</option>
         </select>
    </dl>
    <dl><input type="submit" value="Save"/></dl>

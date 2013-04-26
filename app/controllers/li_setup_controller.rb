@@ -16,7 +16,7 @@ class LiSetupController < ApplicationController
       setup.max_count = params[:count]
       setup.side  = params[:side]
       if setup.save
-         flash[:notice] = 'Latest Issues setup saved.'
+         flash[:notice] = 'Configurações das últimas tarefas salvas.'
       end
       redirect_to :action => 'index'
   end
