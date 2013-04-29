@@ -4,7 +4,7 @@ class LiSetupController < ApplicationController
 
   def index
 	setup = LatestIssuesSetup.find_by_id(1)
-       
+
        if setup == nil
          setup = LatestIssuesSetup.create(:max_count => LatestIssuesSetup::DEFAULT_COUNT, :side => LatestIssuesSetup::DEFAULT_SIDE)
        end
@@ -16,7 +16,7 @@ class LiSetupController < ApplicationController
       setup.max_count = params[:count]
       setup.side  = params[:side]
       if setup.save
-         flash[:notice] = 'Configurações das últimas tarefas salvas.'
+         flash[:notice] = l(:config_saved)
       end
       redirect_to :action => 'index'
   end
