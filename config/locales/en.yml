@@ -1,5 +1,6 @@
 # English strings go here for Rails i18n
 en:
+  latest: "Latest Issues"
   my_label: "My label"
   config_saved: "Latest Issues setup saved."
   issues_count: "Number of issues on page:"

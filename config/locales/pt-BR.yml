@@ -1,5 +1,6 @@
 # Portuguese strings go here for Rails i18n
 pt-BR:
+  latest: "Ãšltimas Tarefas"
   my_label: "Minhas Tarefas"
-  config_saved: "Configurações das últimas tarefas salvas."
-  issues_count: "Número de tarefas nas páginas:"
+  config_saved: "ConfiguraÃ§Ãµes das Ãºltimas tarefas salvas."
+  issues_count: "NÃºmero de tarefas nas pÃ¡ginas:"
