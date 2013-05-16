@@ -5,14 +5,15 @@ class LatestIssuesViewHookListener < Redmine::Hook::ViewListener
         def view_welcome_index_left(context={})
             setup = load_setup()
             if setup[:side] == "left"
-                load_issues(setup[:count])
+                load_issues(setup[:count]) if User.current.logged?
+
             end
         end
 
         def view_welcome_index_right(context={})
             setup = load_setup()
             if setup[:side] == "right"
-                load_issues(setup[:count])
+                load_issues(setup[:count]) if User.current.logged?
             end
         end
 
