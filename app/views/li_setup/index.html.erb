@@ -4,7 +4,7 @@
         <label><%= l :issues_count %></label>
         <input type="text" maxsize="2" name="count" value="<%= @setup.max_count %>"/>
     </dl><dl>
-        <label>Qual lado você quer colocar o plugin??</label>
+        <label>Qual lado você quer colocar o plugin?</label>
         <select name="side">
           <option value="left" <% if @setup.side == 'left' %>selected<% end %>>esquerda</option>
           <option value="right" <% if @setup.side == 'right' %>selected<% end %>>direita</option>
